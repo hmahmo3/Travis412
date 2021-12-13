@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class SimpleCalculatorTest {
+	//testing add
 	@Test
 	public void testAdd() {
 		SimpleCalculator calc = new SimpleCalculator();
@@ -15,6 +16,8 @@ public class SimpleCalculatorTest {
 		assertEquals(calc.add(2, 2), 4);
 		assertEquals(calc.add(0, 4), 4);
 	}
+	
+	//testing minus
 	@Test public void testMinus() {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.minus(5, 3), 2);
@@ -24,6 +27,7 @@ public class SimpleCalculatorTest {
 		assertEquals(calc.minus(4, 2), 2);
 	}
 	
+	//testing multi
 	@Test public void testMulti() {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.multi(2, 1), 2);
@@ -33,6 +37,7 @@ public class SimpleCalculatorTest {
 		assertEquals(calc.multi(2, 3), 6);
 	}
 	
+	//testing div
 	@Test public void testDiv() {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.div(4, 2), 2);
